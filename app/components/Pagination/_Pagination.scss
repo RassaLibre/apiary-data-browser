@@ -1,0 +1,32 @@
+@import "../../_colors";
+
+.pagination{
+	display: flex;
+	flex-direction: row;
+	height: 38px;
+	max-width: 304px;
+	margin: 0px auto;
+
+}
+
+	.pagination__arrow{
+		width: 38px;
+		display: flex;
+		justify-content: center;
+		align-items: stretch;
+
+	}
+
+		.pagination__button{
+			width: 100%;
+			border: none;
+			background-color: $yellow;
+		}
+
+	.pagination__info{
+		flex: 1;
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}

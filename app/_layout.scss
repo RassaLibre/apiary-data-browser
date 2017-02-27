@@ -1,0 +1,87 @@
+@import "./_colors";
+
+html, body{
+	background-color: $background-grey;
+	color: $advert-color-grey;
+}
+
+.page{
+	max-width: 2000px;	/** because of the background picture **/
+	padding-bottom: 24px;
+}
+
+.header{
+	background-image: url("/bg-small.jpeg");
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.resultsContainer{
+	position: relative;
+}
+
+.resultsContainer__curtain{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.body{
+	padding-top: 16px;
+}
+
+.body__smallLegend{
+	text-align: center;
+	font-size: 0.6em;
+}
+
+@media (min-width: 648px) {
+
+	.header{
+		background-image: url("/bg-middle.jpeg");
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 33vh;
+	}
+
+	.resultsContainer{
+		display: flex;
+		flex-wrap: wrap;
+		padding-left: 8px;
+		padding-right: 8px;
+		box-sizing: border-box;
+		justify-content: center;
+	}
+
+	.advert{
+		width: 45%;
+		margin-right: 8px;
+		box-sizing: border-box;
+	}
+
+}
+
+@media (min-width: 976px){
+
+	.header{
+		background-image: url("/bg-big.jpg");
+	}
+
+	.advert{
+		width: 30%;
+	}
+
+}
+
+@media (min-width: 2000px){
+
+	.page{
+		margin: 0px auto;
+	}
+
+}

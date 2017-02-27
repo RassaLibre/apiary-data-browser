@@ -1,0 +1,46 @@
+@import "../../_colors";
+
+.searchForm{
+	box-sizing: border-box;
+	padding: 24px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.3);
+	justify-content: center;
+}
+
+.searchForm__submitButton{
+	background-color: $yellow;
+	padding: 8px;
+	margin: 0px;
+	border: 0px;
+	font-size: 0.8em;
+	width: 38px;
+}
+
+.searchForm__submitButton:disabled{
+	background-color: silver;
+	color: black;
+}
+
+.searchForm__textField{
+	padding: 8px;
+}
+
+.searchForm__element{
+	display: flex;
+	width: 100%;
+}
+
+.searchForm__logoWrapper{
+	width: 50%;
+	padding-bottom: 16px;	/** just an estetic thing **/
+}
+
+.searchForm__logo{
+	margin: 0px auto;
+	display: block;
+	width: 100%;
+	max-width: 320px;	/** because that is the width of the picture **/
+}

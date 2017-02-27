@@ -1,0 +1,108 @@
+@import "../../_colors";
+
+.advert{
+	width: 100%;
+	background-color: $advert-background-grey;
+	margin-bottom: 16px;
+	border-bottom: 1px solid $advert-shadow;
+	display: flex;
+	flex-direction: column;
+}
+
+.advert__body,
+.advert__footer{
+	padding: 8px;
+}
+
+.advert__header{
+	border-bottom: 1px solid $advert-inner-borders-grey;
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+	.advertHeader__name{
+		flex: 1;
+		padding-bottom: 8px;
+		padding-top: 8px;
+	}
+
+		.advertHeader__nameText{
+			font-size: 1em;
+			margin: 0px;
+			padding: 0px;
+			font-weight: 800;
+		}
+
+		.advertHeader__nameText--link{
+			color: $advert-name-blue;
+			text-decoration: none;
+		}
+
+		.advertHeader__address{
+			list-style: none;
+			margin: 0px;
+			padding: 0px;
+			font-size: 0.8em;
+		}
+
+	.advertHeader__logoWrapper{
+		border-left: 1px solid $advert-inner-borders-grey;
+		display: flex;
+		justify-content: center;
+		align-items: stretch;
+		padding: 8px 0px 8px 8px;
+		width: 32px;	/** 32px for the logo + 8px padding **/
+	}
+
+		.advertHeader__logoEnvelope{
+			width: 100%;
+			background-position: center center;
+			background-repeat: no-repeat;
+			background-size: contain;
+		}
+
+		.advertHeader__logo{
+			margin: 0px auto;
+			display: block;
+			max-height: 32px;
+			max-width: 32px;
+		}
+
+.advert__body{
+	flex: 1;
+	display: flex;
+	flex-direction: row;
+	border-bottom: 1px solid $advert-inner-borders-grey;
+}
+
+	.advertBody__coverPhoto{
+		flex: 1;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 8px;
+		background-size: auto 100%;
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+
+	.advertBody__text{
+		flex: 1;
+		font-size: 0.8em;
+	}
+
+
+
+.advert__footer{
+	color: $advert-openning-hours-green;
+}
+
+	.advert__phone{
+		font-size: 0.8em;
+		padding: 0px;
+		margin: 0px;
+	}
+
